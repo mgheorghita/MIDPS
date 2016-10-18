@@ -7,3 +7,12 @@ D:\UTM\MIDPS\Lab2\Calculator\Calculator\obj\Debug\Calculator.Properties.Resource
 D:\UTM\MIDPS\Lab2\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
 D:\UTM\MIDPS\Lab2\Calculator\Calculator\obj\Debug\Calculator.exe
 D:\UTM\MIDPS\Lab2\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\UTM\MIDPS\Lab2\Calculator\bin\Debug\Calculator.exe.config
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.exe
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.pdb
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.Form1.resources
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+D:\UTM\MIDPS\Lab2\Calculator\bin\Debug\Calculator.exe
+D:\UTM\MIDPS\Lab2\Calculator\bin\Debug\Calculator.pdb
+D:\UTM\MIDPS\Lab2\Calculator\obj\Debug\Calculator.Properties.Resources.resources
