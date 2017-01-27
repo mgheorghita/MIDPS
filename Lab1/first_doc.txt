@@ -1,2 +1,2 @@
 file 1 for 1-st commit
-make a change for conflict
+change for merging
