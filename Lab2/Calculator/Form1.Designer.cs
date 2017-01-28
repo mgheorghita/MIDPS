@@ -411,7 +411,7 @@
             // sqrt_btn
             // 
             this.sqrt_btn.BackColor = System.Drawing.Color.Transparent;
-            this.sqrt_btn.BackgroundImage = global::Calculator.Properties.Resources._500px_Root_symbol_svg;
+            this.sqrt_btn.BackgroundImage = global::Calculator.Properties.Resources.square_root1;
             this.sqrt_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.sqrt_btn.FlatAppearance.BorderColor = System.Drawing.Color.Pink;
             this.sqrt_btn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -457,7 +457,7 @@
             this.Controls.Add(this.plus_btn);
             this.Controls.Add(this.textBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
