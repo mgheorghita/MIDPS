@@ -47,9 +47,10 @@
             this.zero_btn = new System.Windows.Forms.Button();
             this.dot_btn = new System.Windows.Forms.Button();
             this.equal_btn = new System.Windows.Forms.Button();
-            this.advance_btn = new System.Windows.Forms.Button();
+            this.pow_btn = new System.Windows.Forms.Button();
             this.clear_btn = new System.Windows.Forms.Button();
             this.operationField = new System.Windows.Forms.TextBox();
+            this.sqrt_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox
@@ -358,22 +359,23 @@
             this.equal_btn.UseVisualStyleBackColor = false;
             this.equal_btn.Click += new System.EventHandler(this.equal_btn_Click);
             // 
-            // advance_btn
+            // pow_btn
             // 
-            this.advance_btn.BackColor = System.Drawing.Color.Transparent;
-            this.advance_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.advance_btn.FlatAppearance.BorderColor = System.Drawing.Color.Pink;
-            this.advance_btn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.advance_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
-            this.advance_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.advance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.advance_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.advance_btn.Location = new System.Drawing.Point(26, 119);
-            this.advance_btn.Name = "advance_btn";
-            this.advance_btn.Size = new System.Drawing.Size(130, 57);
-            this.advance_btn.TabIndex = 21;
-            this.advance_btn.Text = "Advanced";
-            this.advance_btn.UseVisualStyleBackColor = false;
+            this.pow_btn.BackColor = System.Drawing.Color.Transparent;
+            this.pow_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pow_btn.FlatAppearance.BorderColor = System.Drawing.Color.Pink;
+            this.pow_btn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pow_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.pow_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pow_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pow_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pow_btn.Location = new System.Drawing.Point(162, 118);
+            this.pow_btn.Name = "pow_btn";
+            this.pow_btn.Size = new System.Drawing.Size(62, 57);
+            this.pow_btn.TabIndex = 21;
+            this.pow_btn.Text = "x^2 ";
+            this.pow_btn.UseVisualStyleBackColor = false;
+            this.pow_btn.Click += new System.EventHandler(this.pow_btn_Click);
             // 
             // clear_btn
             // 
@@ -384,7 +386,7 @@
             this.clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clear_btn.Location = new System.Drawing.Point(162, 118);
+            this.clear_btn.Location = new System.Drawing.Point(26, 116);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.Size = new System.Drawing.Size(62, 58);
             this.clear_btn.TabIndex = 22;
@@ -392,7 +394,7 @@
             this.clear_btn.UseVisualStyleBackColor = false;
             this.clear_btn.Click += new System.EventHandler(this.clear_btn_Click);
             // 
-            // operations
+            // operationField
             // 
             this.operationField.BackColor = System.Drawing.Color.AliceBlue;
             this.operationField.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -400,11 +402,30 @@
             this.operationField.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.operationField.ForeColor = System.Drawing.SystemColors.ControlText;
             this.operationField.Location = new System.Drawing.Point(42, 76);
-            this.operationField.Name = "operations";
+            this.operationField.Name = "operationField";
             this.operationField.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.operationField.Size = new System.Drawing.Size(236, 17);
             this.operationField.TabIndex = 23;
             this.operationField.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // sqrt_btn
+            // 
+            this.sqrt_btn.BackColor = System.Drawing.Color.Transparent;
+            this.sqrt_btn.BackgroundImage = global::Calculator.Properties.Resources._500px_Root_symbol_svg;
+            this.sqrt_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sqrt_btn.FlatAppearance.BorderColor = System.Drawing.Color.Pink;
+            this.sqrt_btn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sqrt_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.sqrt_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sqrt_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sqrt_btn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.sqrt_btn.Location = new System.Drawing.Point(94, 117);
+            this.sqrt_btn.Name = "sqrt_btn";
+            this.sqrt_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.sqrt_btn.Size = new System.Drawing.Size(62, 57);
+            this.sqrt_btn.TabIndex = 24;
+            this.sqrt_btn.UseVisualStyleBackColor = false;
+            this.sqrt_btn.Click += new System.EventHandler(this.sqrt_btn_Click);
             // 
             // Form1
             // 
@@ -413,8 +434,9 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(319, 446);
+            this.Controls.Add(this.sqrt_btn);
             this.Controls.Add(this.operationField);
-            this.Controls.Add(this.advance_btn);
+            this.Controls.Add(this.pow_btn);
             this.Controls.Add(this.clear_btn);
             this.Controls.Add(this.equal_btn);
             this.Controls.Add(this.dot_btn);
@@ -462,9 +484,10 @@
         private System.Windows.Forms.Button zero_btn;
         private System.Windows.Forms.Button dot_btn;
         private System.Windows.Forms.Button equal_btn;
-        private System.Windows.Forms.Button advance_btn;
+        private System.Windows.Forms.Button pow_btn;
         private System.Windows.Forms.Button clear_btn;
         private System.Windows.Forms.TextBox operationField;
+        private System.Windows.Forms.Button sqrt_btn;
     }
 }
 

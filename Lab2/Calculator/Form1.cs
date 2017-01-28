@@ -73,7 +73,7 @@ namespace Calculator
         {
             checkIfOperation = false;
             textBox.Text += "3";
-            operationField.Text += "3";
+            //operationField.Text += "3";
         }
 
         private void four_btn_Click(object sender, EventArgs e)
@@ -167,8 +167,21 @@ namespace Calculator
                 textBox.Text = result2.ToString();
                 result = 0;
             }
-           
-            
+            else
+                if (op == "sqrt")
+            {
+                result2 = Math.Sqrt(result);
+                textBox.Text = result2.ToString();
+                result = 0;
+            }
+            else
+                if (op == "sqr")
+            {
+                result2 = Math.Pow(result, 2);
+                textBox.Text = result2.ToString();
+                result = 0;
+            }
+
         }
         private void plus_btn_Click(object sender, EventArgs e)
         {
@@ -266,6 +279,44 @@ namespace Calculator
             checkIfOperation = false;
             //operations.Text += ".";
             textBox.Text += ".";
+        }
+
+        private void sqrt_btn_Click(object sender, EventArgs e)
+        {
+            if (checkIfOperation == false)
+            {
+                operationField.Text += "sqrt(" + textBox.Text + ")";
+                result += double.Parse(textBox.Text);
+                textBox.Clear();
+
+            }
+            else
+            {
+                operationField.Text = operationField.Text.Substring(0, operationField.Text.Length - 1);
+                operationField.Text += "sqrt(" + textBox.Text + ")";
+            }
+
+            op = "sqrt";
+            checkIfOperation = true;
+        }
+
+        private void pow_btn_Click(object sender, EventArgs e)
+        {
+            if (checkIfOperation == false)
+            {
+                operationField.Text += "sqr(" + textBox.Text + ")";
+                result += double.Parse(textBox.Text);
+                textBox.Clear();
+
+            }
+            else
+            {
+                operationField.Text = operationField.Text.Substring(0, operationField.Text.Length - 1);
+                operationField.Text += "sqr(" + textBox.Text + ")";
+            }
+
+            op = "sqr";
+            checkIfOperation = true;
         }
     }
 }
