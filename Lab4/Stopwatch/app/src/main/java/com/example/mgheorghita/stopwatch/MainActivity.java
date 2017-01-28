@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
         ListElementsArrayList = new ArrayList<String>(Arrays.asList(LapListElement));
 
         adapter = new ArrayAdapter<String>(MainActivity.this,
-                android.R.layout.simple_list_item_1,
+                R.layout.my_list_row,
                 ListElementsArrayList
         );
 
         lapList.setAdapter(adapter);
-
+//        lapList.setAdapter(new ArrayAdapter<String>(this,R.layout.my_list_row , adapter));
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

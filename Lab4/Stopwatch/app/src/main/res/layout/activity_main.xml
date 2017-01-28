@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#7b0000"
-    android:textColor="#FFFFF"
+    android:textColor="#FFFFFF"
     tools:context="com.example.mgheorghita.stopwatch.MainActivity">
 
     <TextView
@@ -71,7 +71,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:id="@+id/lapList"
-        android:textColor="#FFFFFF"
-        />
+        android:textColor="@android:color/background_light" />
 
 </RelativeLayout>
